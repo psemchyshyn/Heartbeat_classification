@@ -1,0 +1,5 @@
+/checkpoints_cnn
+/checkpoints_rnn
+/checkpoints_rnn_spectr
+/__pycache__
+/archive

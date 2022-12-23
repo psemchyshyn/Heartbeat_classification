@@ -1,0 +1,27 @@
+data:
+  train_path: archive\mitbih_train.csv
+  test_path: archive\mitbih_test.csv
+  train_val_split: 0.7
+
+training: 
+  lr: 0.001
+  batch_size: 64
+  is_spectrogram: False
+  model: "rnn"
+
+cnn_model:
+  num_classes: 5
+  kernel_size: 5
+  residual_channels: 32
+  fc_nodes: 32
+
+rnn_model:
+  layer_dim: 1
+  hidden_size: 128
+  num_classes: 5
+  input_size: 1 # floor(window size / 2) + 1
+  use_lstm: True
+
+spectrogram:
+  window_size: 32
+  hop_length: 8
